@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KURSUS KMK PENGENALAN PENGAKAP</title>
+<title>Kursus KMK Pengenalan Pengakap</title>
 
 <style>
 body {
@@ -14,58 +14,92 @@ body {
   text-align: center;
 }
 
+/* HEADER */
 header {
   background: white;
-  color: #0a4d2c;
   padding: 40px 20px;
+  border-bottom: 4px solid #0b4da2;
 }
 
 header img {
-  width: 900px;
+  width: 180px;
   background: white;
-  padding: 15px 25px;
-  border-radius: 12px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
+h1 {
+  margin: 15px 0 5px 0;
+  color: #0b4da2;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* SECTION */
 section {
   max-width: 900px;
   margin: auto;
   padding: 30px 20px;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 25px;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-h1, h2 {
+/* TITLE */
+h2 {
+  color: #0b4da2;
   margin-top: 0;
-  color: #0a4d2c;
 }
 
-button {
+.icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 5px;
+  color: #1e73be;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
   background: #ffc107;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 25px;
+  color: black;
+  padding: 15px 35px;
+  border-radius: 30px;
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer;
+  text-decoration: none;
   margin-top: 15px;
 }
 
+/* POSTER */
+img.poster {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* LIST */
 ul, ol {
   list-style-position: inside;
   padding: 0;
+  margin: 10px 0;
 }
 
+/* FOOTER */
 footer {
   font-size: 14px;
-  color: #666;
+  color: #555;
   padding: 40px 10px;
+  border-top: 2px solid #0b4da2;
 }
 </style>
 </head>
@@ -73,28 +107,36 @@ footer {
 <body>
 
 <header>
-  <img src="ppmlogo.png" alt="Logo Pengakap">
-  <h1>KURSUS KMK PENGENALAN PENGAKAP</h1>
+  <img src="logo-ppm-baru.jpeg" alt="Logo Pengakap">
+  <h1>🧭 Kursus KMK Pengenalan Pengakap</h1>
   <p>Khas untuk Pemimpin & Bakal Pemimpin Pengakap</p>
 </header>
 
 <section>
 
 <div class="card">
-  <h2>📅 Maklumat Kursus</h2>
-  <p><b>Tarikh:</b> 09 Mei 2026 (Sabtu) </p>
+  <span class="icon">🖼️</span>
+  <h2>Poster Kursus</h2>
+  <img src="poster-kursus.jpg" class="poster" alt="Poster Kursus">
+</div>
+
+<div class="card">
+  <span class="icon">📅</span>
+  <h2>Maklumat Kursus</h2>
+  <p><b>Tarikh:</b> 09 Mei 2026 (Sabtu)</p>
   <p><b>Masa:</b> 7.00 pagi – 5.00 petang</p>
   <p><b>Tempat:</b> Pusat Kegiatan Guru (PKG), Tenom</p>
 </div>
 
 <div class="card">
-  <h2>📘 Kandungan Kursus</h2>
+  <span class="icon">📘</span>
+  <h2>Kandungan Kursus</h2>
   <ol>
-    <li>Tujuan dan Dasar Kepengakapan</li>
+    <li>Tujuan & Dasar Kepengakapan</li>
     <li>Visi & Misi WOSM dan PPM</li>
     <li>Persetiaan & Undang-undang Pengakap</li>
     <li>Dasar Keagamaan Pengakap</li>
-    <li>Rekod dan Dokumen Kumpulan</li>
+    <li>Rekod & Dokumen Kumpulan</li>
     <li>Skim Latihan Manikayu</li>
     <li>Sejarah Kepengakapan</li>
     <li>Pakaian Seragam & Lencana</li>
@@ -103,27 +145,75 @@ footer {
 </div>
 
 <div class="card">
-  <h2>🎁 Apa Anda Akan Dapat</h2>
+  <span class="icon">👥</span>
+  <h2>Siapa Yang Perlu Hadir</h2>
   <ul>
-    <li>Nota PDF & modul lengkap</li>
-    <li>Template rekod & dokumen</li>
-    <li>Sijil penyertaan kursus</li>
+    <li>Guru penasihat Pengakap</li>
+    <li>Pemimpin Pengakap (baru & sedia ada)</li>
+    <li>Bakal pemimpin & penolong pemimpin</li>
+    <li>Pemimpin belum mengikuti KMK</li>
+    <li>Pemimpin ingin tingkatkan kualiti unit</li>
   </ul>
 </div>
 
 <div class="card">
-  <h2>💰 Yuran Kursus</h2>
-  <p style="font-size:20px;"><b>RM30 SAHAJA</b></p>
-  <a href="https://wa.me/60123456789">
-    <button>DAFTAR SEKARANG</button>
-  </a>
+  <span class="icon">❓</span>
+  <h2>Kenapa Perlu Hadir</h2>
+  <ul>
+    <li>Memahami dasar kepengakapan sebenar</li>
+    <li>Lebih yakin memimpin unit</li>
+    <li>Elak kesilapan urus aktiviti</li>
+    <li>Permudahkan laluan ke Manikayu</li>
+    <li>Menjamin keselamatan ahli</li>
+  </ul>
+</div>
+
+<div class="card">
+  <span class="icon">⚠️</span>
+  <h2>Jika Tidak Hadir</h2>
+  <ul>
+    <li>Aktiviti tidak tersusun</li>
+    <li>Murid tidak dibimbing dengan betul</li>
+    <li>Risiko keselamatan meningkat</li>
+    <li>Dokumentasi tidak lengkap</li>
+    <li>Potensi murid terbantut</li>
+  </ul>
+</div>
+
+<div class="card">
+  <span class="icon">🌟</span>
+  <h2>Kesan Positif Kepada Murid</h2>
+  <ul>
+    <li>Hala tuju jelas & terarah</li>
+    <li>Pengiktirafan sekolah hingga antarabangsa</li>
+    <li>Berjaya laksanakan Skim Pengakap</li>
+    <li>Lulus Lencana Wajib, Kepandaian & Kemahiran</li>
+    <li>Terbentuk sahsiah & kepimpinan</li>
+  </ul>
+</div>
+
+<div class="card">
+  <span class="icon">🎁</span>
+  <h2>Apa Anda Akan Dapat</h2>
+  <ul>
+    <li>Nota PDF & modul lengkap</li>
+    <li>Template rekod & dokumen rasmi</li>
+    <li>Sijil penyertaan kursus</li>
+  </ul>
+  <a href="Silibus_KMK_Pengenalan_Pengakap.pdf" class="btn">📄 Muat Turun Silibus</a>
+</div>
+
+<div class="card">
+  <span class="icon">💰</span>
+  <h2>Yuran Kursus</h2>
+  <p style="font-size:22px;"><b>RM30 SAHAJA</b></p>
+  <a href="https://wa.me/60123456789" class="btn">DAFTAR SEKARANG</a>
 </div>
 
 </section>
 
 <footer>
-  © 2026 Kursus KMK Pengenalan Pengakap
-  Unit Latihan & Program Pengakap Tenom
+  © 2026 Kursus KMK Pengenalan Pengakap | Rasmi
 </footer>
 
 </body>
